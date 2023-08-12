@@ -10,7 +10,7 @@ export default function Home() {
       <main className={clsx(
         "min-h-screen",
         "flex flex-col items-center justify-between",
-        "p-24"
+        "p-24",
       )}>
         Home page
       </main>
