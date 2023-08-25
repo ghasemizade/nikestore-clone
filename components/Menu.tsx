@@ -59,7 +59,10 @@ export default function Menu({showCatMenu, setShowCatMenu}: MenuProps) {
                                         "shadow-lg"
                                     )}>
                                         {subNavData.map(subMenu => (
-                                            <Link key={subMenu.id} href={"/"}>
+                                            <Link 
+                                                key={subMenu.id} 
+                                                href={"/"}
+                                                onClick={() => setShowCatMenu(false)}>
                                                 <li className={clsx(
                                                     "h-12",
                                                     "flex justify-between items-center",
