@@ -35,8 +35,8 @@ export default function Head() {
                         alt="logo"
                     />
                 </Link>
-            </Wrapper>
                 <Menu/>
+            </Wrapper>
         </header>
     )
 }
