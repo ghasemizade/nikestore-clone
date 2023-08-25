@@ -13,7 +13,7 @@ import { VscChromeClose } from 'react-icons/vsc'
 
 
 export default function Head() {
-    const [movileMenu, setMovileMenu] = useState(false)
+    const [mobileMenu, setMobileMenu] = useState(false)
     const [showCatMenu, setShowCatMenu] = useState(false)
     const [show, setShow] = useState("translate-y-0")
     const [lastScrollY, setLastScrollY] = useState(0)
@@ -57,7 +57,7 @@ export default function Head() {
                         "cursor-pointer",
                         "relative"
                     )}>
-                        {/* cart icon */}
+                        {/* heart icon */}
                         <IoMdHeartEmpty className={clsx(
                             "text-[15px] md:text-[20px]"
                         )}/>
@@ -95,6 +95,27 @@ export default function Head() {
                             "flex justify-center items-center",
                             "px-[2px] md:px-[5px]"
                         )}>5</div>
+                    </div>
+
+                            {/* movile icon */}
+                    <div className={clsx(
+                        "w-8 md:w-12 h-8 md:h-12",
+                        "rounded-full",
+                        "flex justify-center items-center",
+                        "hover:bg-black/[0.05]",
+                        "cursor-pointer",
+                        "relative",
+                        "mr-2"
+                    )}>
+                        {mobileMenu ? (
+                            <VscChromeClose className={clsx(
+                                "text-[16px]"
+                            )} onClick={() => setMobileMenu(false)}/>
+                        ) : (
+                            <BiMenuAltRight className={clsx(
+                                "text-[20px]"
+                            )} onClick={() => setMobileMenu(true)}/>
+                        )}
                     </div>
                 </div>
             </Wrapper>
