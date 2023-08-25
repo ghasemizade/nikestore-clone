@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import Link from 'next/link'
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
 
@@ -28,9 +29,31 @@ export default function Menu() {
         "text-bold"
     )}>
         {navData.map(item => (
-            <>
-                <li>{item.name}</li>
-            </>
+            <React.Fragment key={item.id}>
+                {
+                    !!item?.subMenu ? (
+                        <li className={clsx(
+                            "cursor-pointer",
+                            "flex items-center",
+                            "gap-2",
+                            "relative",
+                        )}>
+                            {item.name}
+                            <BsChevronDown size={14}/>
+
+                            
+                        </li>
+                    ) : (
+                        <li className={clsx(
+                            "cursor-pointer"
+                        )}>
+                            <Link href={item?.url}>
+                                {item.name}
+                            </Link>
+                        </li>
+                    )
+                }
+            </React.Fragment>
         ))}
     </ul>
   )
