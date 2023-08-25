@@ -18,8 +18,12 @@ const subNavData = [
     {id: 4, name: "Football shoes", doc_count: 107},
 ]
 
+interface MenuProps {
+    showCatMenu: boolean,
+    setShowCatMenu: boolean
+}
 
-export default function Menu() {
+export default function Menu({showCatMenu, setShowCatMenu}: MenuProps) {
   return (
     <ul className={clsx(
         "hidden",
@@ -37,17 +41,50 @@ export default function Menu() {
                             "flex items-center",
                             "gap-2",
                             "relative",
-                        )}>
+                        )} onMouseEnter={() => setShowCatMenu(true)}
+                           onMouseLeave={() => setShowCatMenu(false)}>
                             {item.name}
                             <BsChevronDown size={14}/>
 
-                            
+                            {
+                                showCatMenu && (
+                                    <ul className={clsx(
+                                        "bg-white",
+                                        "absolute",
+                                        "top-6 left-0",
+                                        "min-w-[250px]",
+                                        "px-1 py-1",
+                                        "text-bold",
+                                        "shadow-lg"
+                                    )}>
+                                        {subNavData.map(subMenu => (
+                                            <Link key={subMenu.id} href={"/"}>
+                                                <li className={clsx(
+                                                    "h-12",
+                                                    "flex justify-between items-center",
+                                                    "px-3",
+                                                    "hover:bg-black/[0.03]",
+                                                    "rounded-md"
+                                                )}>
+                                                    {subMenu.name}
+                                                    <span className={clsx(
+                                                        "opacity-50",
+                                                        "text-sm"
+                                                    )}>
+                                                        {subMenu.doc_count}
+                                                    </span>
+                                                </li>
+                                            </Link>
+                                        ))}
+                                    </ul>
+                                )
+                            }
                         </li>
                     ) : (
                         <li className={clsx(
                             "cursor-pointer"
                         )}>
-                            <Link href={item?.url}>
+                            <Link href={`${item?.url}`}>
                                 {item.name}
                             </Link>
                         </li>
