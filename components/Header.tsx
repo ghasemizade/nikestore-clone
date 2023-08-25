@@ -25,7 +25,10 @@ export default function Head() {
             "transition-transform duration-200",
             `${show}`
         )}>
-            <Wrapper>
+            <Wrapper className={clsx(
+                "h-[60px]",
+                "flex justify-between items-center"
+            )}>
                 <Link href={"./"}>
                     <Image 
                         className={clsx(
@@ -35,7 +38,7 @@ export default function Head() {
                         alt="logo"
                     />
                 </Link>
-                <Menu/>
+                <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu}/>
             </Wrapper>
         </header>
     )
