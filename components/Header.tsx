@@ -6,6 +6,7 @@ import Image from "next/image";
 import Logo from "../public/icons/nike-4-logo-svgrepo-com.svg"
 import Link from "next/link";
 import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 import { IoMdHeartEmpty } from 'react-icons/io'
 import { BsCart } from 'react-icons/bs'
 import { BiMenuAltRight } from 'react-icons/bi'
@@ -43,7 +44,18 @@ export default function Head() {
                         alt="logo"
                     />
                 </Link>
-                <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu}/>
+                
+                <Menu 
+                    showCatMenu={showCatMenu} 
+                    setShowCatMenu={setShowCatMenu}/>
+                
+                {mobileMenu && (
+                    <MobileMenu 
+                    showCatMenu={showCatMenu} 
+                    setShowCatMenu={setShowCatMenu}
+                    setMobileMenu={setMobileMenu}/>
+                )}
+
                 <div className={clsx(
                     "flex items-center",
                     "gap-2",
