@@ -2,6 +2,10 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
+import { IoMdHeartEmpty } from 'react-icons/io'
+import { BsCart } from 'react-icons/bs'
+import { BiMenuAltRight } from 'react-icons/bi'
+import { VscChromeClose } from 'react-icons/vsc'
 
 
 const navData = [
