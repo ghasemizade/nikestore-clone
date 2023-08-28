@@ -2,6 +2,8 @@ import clsx from "clsx";
 import Wrapper from "./Wrapper";
 import {FaGithub} from 'react-icons/fa'
 import Link from "next/link";
+import Fcol from "./Fcol";
+import Fcoll from "./Fcoll";
 
 export default function Footer() {
     return (
@@ -22,107 +24,26 @@ export default function Footer() {
                         "flex flex-col md:flex-row",
                         "gap-[50px] md:gap-[75px] lg:gap-[100px]",
                     )}>
-                        <ul className={clsx(
-                            "flex flex-col",
-                            "gap-4",
-                            "shrink-0",
-                        )}>
-                            <li className={clsx(
-                                "font-oswald font-medium",
-                                "uppercase text-sm",
-                                "cursor-pointer"
-                            )}>FIND A STORE</li>
-                            <li className={clsx(
-                                "font-oswald font-medium",
-                                "uppercase text-sm",
-                                "cursor-pointer"
-                            )}>BECOME A PAERNER</li>
-                            <li className={clsx(
-                                "font-oswald font-medium",
-                                "uppercase text-sm",
-                                "cursor-pointer"
-                            )}>SIGN UP FOR EMAIL</li>
-                            <li className={clsx(
-                                "font-oswald font-medium",
-                                "uppercase text-sm",
-                                "cursor-pointer"
-                            )}>SEND US FEEDBACK</li>
-                            <li className={clsx(
-                                "font-oswald font-medium",
-                                "uppercase text-sm",
-                                "cursor-pointer"
-                            )}>STUDENT DISCOUNT</li>
-                        </ul>
+                        <Fcol 
+                            row1="find a store"
+                            row2="become apaerner"
+                            row3="sign up for email"
+                            row4="send us feedback"
+                            row5="student discount"/>
 
-                        <ul className={clsx(
-                            "flex flex-col",
-                            "gap-3"
-                        )}>
-                            <li className={clsx(
-                                "font-medium",
-                                "uppercase",
-                                "text-sm"
-                            )}>About nike</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>News</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>Careers</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>Investors</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>Sustainability</li>
-                        </ul>
+                        <Fcoll 
+                            row1="about nike"
+                            row2="news"
+                            row3="careers"
+                            row4="investors"
+                            row5="sustainability"/>
 
-                        <ul className={clsx(
-                            "flex flex-col",
-                            "gap-3"
-                        )}>
-                            <li className={clsx(
-                                "font-medium",
-                                "uppercase",
-                                "text-sm"
-                            )}>get help</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>order status</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>delivery</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>returns</li>
-                            <li className={clsx(
-                                "font-thin",
-                                "uppercase",
-                                "text-white/[0.5] hover:text-white",
-                                "duration-200"
-                            )}>contact us</li>
-                        </ul> 
+                        <Fcoll 
+                            row1="get help"
+                            row2="order status"
+                            row3="delivery"
+                            row4="returns"
+                            row5="contact us"/>
                     </div>
                     <Link href={'https://github.com/ghasemizade'} target="_blank">
                         <FaGithub size={50}/>
