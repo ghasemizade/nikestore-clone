@@ -21,11 +21,16 @@ export default function Head() {
     
     const controlNavbar = () =>{
         if (window.scrollY > 200) {
-            setShow("-translate-y-[80px]")
+            if (window.scrollY > lastScrollY) {
+                setShow("-translate-y-[80px]")
+            } else {
+                setShow("shadow-sm")
+            }
             
         } else {
             setShow("translate-y-0")
         }
+        setLastScrollY(window.scrollY)
     }
 
     useEffect(() => {
