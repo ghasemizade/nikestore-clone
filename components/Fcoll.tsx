@@ -2,12 +2,12 @@ import React from 'react'
 import clsx from "clsx";
 
 interface fcollProps {
-    row1: string
-    row2: string
-    row3: string
-    row4: string
-    row5?: string
-    row6?: string
+    row1: string | null
+    row2: string | null
+    row3: string | null
+    row4: string | null
+    row5?: string | null
+    row6?: string | null
 }
 
 export default function Fcoll({row1, row2, row3, row4, row5}: fcollProps) {
