@@ -20,7 +20,7 @@ export default function Head() {
     const [lastScrollY, setLastScrollY] = useState(0)
     
     const controlNavbar = () =>{
-        if (window.scrollY > 200) {
+        if (window.scrollY > 200 && !mobileMenu) {
             if (window.scrollY > lastScrollY) {
                 setShow("-translate-y-[80px]")
             } else {
