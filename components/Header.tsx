@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import clsx from "clsx";
 import Wrapper from "./Wrapper";
 import Image from "next/image";
@@ -19,6 +19,21 @@ export default function Head() {
     const [show, setShow] = useState("translate-y-0")
     const [lastScrollY, setLastScrollY] = useState(0)
     
+    const controlNavbar = () =>{
+        if (window.scrollY > 200) {
+            setShow("-translate-y-[80px]")
+            
+        } else {
+            setShow("translate-y-0")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", controlNavbar)
+        return () => {
+            window.removeEventListener("scroll", controlNavbar)
+        }
+    }, [lastScrollY])
 
     return (
         <header className={clsx(
