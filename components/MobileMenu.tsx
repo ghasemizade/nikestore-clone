@@ -21,8 +21,8 @@ const subNavData = [
 
 interface MenuProps {
     showCatMenu: boolean
-    setShowCatMenu: boolean
-    setMobileMenu: boolean
+    setShowCatMenu: (show: boolean) => void
+    setMobileMenu: (show: boolean) => void
 }
 
 export default function MobileMenu({showCatMenu, setShowCatMenu, setMobileMenu}: MenuProps) {
