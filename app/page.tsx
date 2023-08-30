@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Head from "@/components/Header";
 import clsx from "clsx";
@@ -12,7 +13,7 @@ export default function Home() {
         "flex flex-col items-center justify-between",
         "p-24",
       )}>
-        Home page
+        <Banner />
       </main>
       <Footer />
     </>
