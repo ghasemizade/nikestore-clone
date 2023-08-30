@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Head from "@/components/Header";
+import Headingdesc from "@/components/Headingdesc";
 import clsx from "clsx";
 
 
@@ -14,6 +15,7 @@ export default function Home() {
         "p-24",
       )}>
         <Banner />
+        <Headingdesc />
       </main>
       <Footer />
     </>
