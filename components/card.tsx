@@ -3,17 +3,18 @@ import clsx from 'clsx'
 import React from 'react'
 
 
-export default function Card() {
+export default function Card({src, title, price}) {
   return (
     <div className={clsx(
         "duration-200",
         "hover:scale-105",
-        "p-5",
+        "w-full"
 
     )}>
             <img className={clsx(
                 "rounded-lg",
-            )} src="./images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png" alt="jordanair" />
+            )} src="./images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png" 
+                alt="jordanair" />
             <p className={clsx(
                 "font-medium",
                 "mb-2 mt-4",
