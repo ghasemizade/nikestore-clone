@@ -1,6 +1,4 @@
 import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Head from "@/components/Header";
 import Headingdesc from "@/components/Headingdesc";
 import Wrapper from "@/components/Wrapper";
 import Card from "@/components/card";
@@ -11,7 +9,6 @@ import data from '@/components/Listdata'
 export default function Home() {
   return (
     <>
-      <Head />
       <main className={clsx(
         "min-h-screen",
         "flex flex-col items-center justify-between",
@@ -33,7 +30,6 @@ export default function Home() {
           ))}
         </Wrapper>
       </main>
-      <Footer />
     </>
   )
 }
