@@ -5,6 +5,7 @@ import Headingdesc from "@/components/Headingdesc";
 import Wrapper from "@/components/Wrapper";
 import Card from "@/components/card";
 import clsx from "clsx";
+import data from '@/components/Listdata'
 
 
 export default function Home() {
@@ -19,9 +20,17 @@ export default function Home() {
         <Banner />
         <Headingdesc />
         <Wrapper className={clsx(
-          "grid grid-cols-3"
+          "grid md:grid-cols-3 grid-cols-1 gap-20",
         )}>
-          <Card />
+          {data.map(item => (
+            <>
+            <Card 
+              key={item.id}
+              src={item.src}
+              title={item.title}
+              price={item.price}/>
+            </>
+          ))}
         </Wrapper>
       </main>
       <Footer />
