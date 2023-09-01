@@ -16,9 +16,8 @@ export default function Card({src, title, price}: CardProps) {
 
     )}>
             <img className={clsx(
-                "rounded-lg",
             )} src={src} 
-                alt="jordanair" />
+                alt={title} />
             <p className={clsx(
                 "font-medium",
                 "mb-2 mt-4",
