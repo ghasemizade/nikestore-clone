@@ -15,7 +15,7 @@ const navData = [
 const subNavData = [
     {id: 1, name: "Jordan", doc_count: 9, directory: '/category/jordan'},
     {id: 2, name: "Jump Man", doc_count: 8, directory: '/category/jumpman'},
-    {id: 3, name: "Running shoes", doc_count: 64, directory: '/category/runingshoes'},
+    {id: 3, name: "Running shoes", doc_count: 64, directory: '/category/running'},
     {id: 4, name: "Football shoes", doc_count: 107, directory: '/category/footballshoes'},
 ]
 
