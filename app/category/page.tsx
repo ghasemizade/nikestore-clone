@@ -6,7 +6,6 @@ import clsx from "clsx";
 export default function Category() {
   return (
     <>
-      <Head />
       <main className={clsx(
         "min-h-screen",
         "flex flex-col items-center justify-between",
@@ -14,7 +13,6 @@ export default function Category() {
       )}>
         Category
       </main>
-      <Footer />
     </>
   )
 }
