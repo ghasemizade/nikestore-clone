@@ -61,7 +61,7 @@ export default function Menu({showCatMenu, setShowCatMenu}: MenuProps) {
                                         {subNavData.map(subMenu => (
                                             <Link 
                                                 key={subMenu.id} 
-                                                href={"/"}
+                                                href={"/category"}
                                                 onClick={() => setShowCatMenu(false)}>
                                                 <li className={clsx(
                                                     "h-12",
