@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import clsx from 'clsx'
 import React from 'react'
+
 
 export default function Card() {
   return (
@@ -7,11 +9,14 @@ export default function Card() {
         "duration-200",
         "hover:scale-105",
         "p-5",
+
     )}>
-            <img src="./images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png" alt="jordanair" />
+            <img className={clsx(
+                "rounded-lg",
+            )} src="./images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png" alt="jordanair" />
             <p className={clsx(
                 "font-medium",
-                "mb-2"
+                "mb-2 mt-4",
             )}>air jordan flyease</p>
             <div className={clsx(
                 "flex justify-between items-center",
