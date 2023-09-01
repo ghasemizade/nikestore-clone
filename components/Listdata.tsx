@@ -1,6 +1,6 @@
 let listdata = [
-    {id: 1, src: './images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png', title: 'air jordan 1hi flyease', price: 99},
-    {id: 2, src: './images/air-jordan-1mid/31ff59e2-89d0-4a83-839a-656618674782.png', title: 'air jordan 1mid', price: 99},
+    {id: 1, src: './images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png', title: 'air jordan 1hi flyease', price: 99, category: 'jordan'},
+    {id: 2, src: './images/air-jordan-1mid/31ff59e2-89d0-4a83-839a-656618674782.png', title: 'air jordan 1mid', price: 99, category: 'jordan'},
     {id: 3, src: './images/air-jordan-1mid-1/3b14fa48-f61f-4c57-a875-e14d6aa51a54.png', title: 'air jordan 1mid-1', price: 99},
     {id: 4, src: './images/air-jordan-1retrohight-og/b3cb2095-b729-404b-8cdc-3383771d0036.png', title: 'air jordan 1retrohight og', price: 99},
     {id: 5, src: './images/air-jordan-3retro/air-jordan-3-retro-shoes-rlqmKd.png', title: 'air jordan 3retro', price: 99},
