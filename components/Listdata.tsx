@@ -10,6 +10,9 @@ let listdata = [
     {id: 9, src: './images/jordan-stay-royal2/99261e1b-d7a9-4912-9976-4ca516f1724e.png', title: 'jordan stay royal2', price: 99, category: 'jordan'},
     {id: 10, src: './images/jumpman1-mvp/a4fe47a4-6eaf-4df6-9684-9586e1a2596e.png', title: 'jumpman1 mvp', price: 99, category: 'jumpman'},
     {id: 11, src: './images/jumpman-mvp/1993cbf9-cb54-4fd1-84ef-92146fc474e4.png', title: 'jumpman mvp', price: 99, category: 'jumpman'},
+    {id: 12, src: './images/mens-road-running/pegasus-40-road-running-shoes-HTDVsQ.png', title: 'men road running', price: 99, category: 'running'},
+    {id: 13, src: './images/mens-road-running-fly5/f655b4fb-35e9-4a63-acf8-c02dfd78cfda.png', title: 'running fly5', price: 99, category: 'running'},
+    {id: 14, src: './images/mens-roud-running-Invincible 3/pegasus-40-road-running-shoes-HTDV.png', title: 'running invincible3', price: 99, category: 'running'},
 ]
 
 
