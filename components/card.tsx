@@ -2,27 +2,31 @@
 import clsx from 'clsx'
 import React from 'react'
 
+interface CardProps {
+    src: string
+    title: string
+    price: number
+}
 
-export default function Card({src, title, price}) {
+export default function Card({src, title, price}: CardProps) {
   return (
     <div className={clsx(
         "duration-200",
         "hover:scale-105",
-        "w-full"
 
     )}>
             <img className={clsx(
                 "rounded-lg",
-            )} src="./images/air-jordan-1hi-flyease/b38436e0-1698-4ccd-ad71-7f64bb805ea6.png" 
+            )} src={src} 
                 alt="jordanair" />
             <p className={clsx(
                 "font-medium",
                 "mb-2 mt-4",
-            )}>air jordan flyease</p>
+            )}>{title}</p>
             <div className={clsx(
                 "flex justify-between items-center",
             )}>
-                <p>$99</p>
+                <p>${price}</p>
                 <button className={clsx(
                     "uppercase",
                     "text-green-600",
