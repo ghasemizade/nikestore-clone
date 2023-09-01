@@ -13,10 +13,10 @@ const navData = [
 ]
 
 const subNavData = [
-    {id: 1, name: "Jordan", doc_count: 11},
-    {id: 2, name: "Sneakers", doc_count: 8},
-    {id: 3, name: "Running shoes", doc_count: 64},
-    {id: 4, name: "Football shoes", doc_count: 107},
+    {id: 1, name: "Jordan", doc_count: 11, directory: '/category/jordan'},
+    {id: 2, name: "Sneakers", doc_count: 8, directory: '/category/sneakers'},
+    {id: 3, name: "Running shoes", doc_count: 64, directory: '/category/runingshoes'},
+    {id: 4, name: "Football shoes", doc_count: 107, directory: '/category/footballshoes'},
 ]
 
 interface MenuProps {
@@ -61,7 +61,7 @@ export default function Menu({showCatMenu, setShowCatMenu}: MenuProps) {
                                         {subNavData.map(subMenu => (
                                             <Link 
                                                 key={subMenu.id} 
-                                                href={"/category"}
+                                                href={subMenu.directory}
                                                 onClick={() => setShowCatMenu(false)}>
                                                 <li className={clsx(
                                                     "h-12",
