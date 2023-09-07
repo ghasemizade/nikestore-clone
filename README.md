@@ -1,6 +1,34 @@
-# [ShoShop](https://ghasemizade.github.io/nikestore-repo)
+# [ShoShop](https://ghasemizade.github.io/nikestore-repo) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
 
-## Getting Started
+## Installation
+
+### clone repository
+
+```
+$ git clone https://github.com/ghasemizade/nikestore-repo
+```
+
+### install node package manager
+
+```
+$ npm install
+```
+
+### run project localhost
+
+```
+$ npm run dev
+```
+
+## Stack
+
+- [NEXT](https://github.com/vercel/next.js) documentation
+
+- [REACT](https://github.com/facebook/react) documentation
+
+- [TAILWIND](https://github.com/tailwindlabs) documentation
+
+- [TYPESCRIPT](https://github.com/microsoft/TypeScript) documentation
 
 First, run the development server:
 
