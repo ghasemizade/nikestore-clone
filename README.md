@@ -1,5 +1,8 @@
 # [ShoShop](https://ghasemizade.github.io/nikestore-repo) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
 
+![Screenshot 2023-09-09 155005](https://github.com/ghasemizade/nikestore-repo/assets/92257857/14af9cd4-821c-42fe-a877-26f1bff4fae4)
+
+
 ## Installation
 
 ### clone repository
