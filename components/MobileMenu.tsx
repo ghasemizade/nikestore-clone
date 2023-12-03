@@ -37,7 +37,7 @@ export default function MobileMenu({showCatMenu, setShowCatMenu, setMobileMenu}:
         "h-[calc(100vh-50px)]",
         "bg-white",
         "border-t",
-        "text-black"
+        "text-black",
     )}>
         {navData.map(item => (
             <React.Fragment key={item.id}>

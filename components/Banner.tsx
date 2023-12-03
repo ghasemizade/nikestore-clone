@@ -39,7 +39,8 @@ export default function Banner() {
             infinite={true}
             autoPlay={true}
             autoPlaySpeed={4000}
-            ssr={true}>
+            ssr={true}
+            className='z-10'>
             <a href='#jordan1mid' className={clsx(
                 "grayscale",
                 "hover:grayscale-0",
