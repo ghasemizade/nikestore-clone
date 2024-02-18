@@ -6,6 +6,7 @@ import Card from "@/components/card";
 
 export default function Category() {
     const filterd = data.filter(item => item.category == "jumpman")
+    const isExist = data.some(item => item.category == "jumpman")
 
 
   return (
@@ -15,17 +16,27 @@ export default function Category() {
         "flex flex-col items-center justify-between",
         "p-24",
       )}>
-        <Wrapper className={clsx(
-          "grid md:grid-cols-3 grid-cols-1 gap-20",
-          )}>
-            {filterd.map(item => (
-              <Card 
-                key={item.id}
-                src={`../${item.src}`}
-                title={item.title}
-                price={item.price}/>
-            ))}
-        </Wrapper>
+        {isExist ? 
+            <Wrapper className={clsx(
+                "grid md:grid-cols-3 grid-cols-1 gap-20",
+                )}>
+                  {filterd.map(item => (
+                      
+                      <Card 
+                      key={item.id}
+                      src={`../${item.src}`}
+                      title={item.title}
+                      price={item.price}
+                      />
+                      ))}
+              </Wrapper>
+
+        : <p className={clsx(
+            "text-lg font-bold",
+            "text-gray-300"
+        )}>
+                Product not found...!
+        </p>}
       </main>
     </>
   )
