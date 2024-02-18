@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
-
+import listdata from './Listdata'
 
 
 const navData = [
@@ -14,9 +14,9 @@ const navData = [
 
 const subNavData = [
     {id: 1, name: "Jordan", doc_count: 9, directory: '/category/jordan'},
-    {id: 2, name: "Jump Man", doc_count: 8, directory: '/category/jumpman'},
-    {id: 3, name: "Running shoes", doc_count: 64, directory: '/category/running'},
-    {id: 4, name: "Football shoes", doc_count: 107, directory: '/category/footballshoes'},
+    {id: 2, name: "Jump Man", doc_count: 2, directory: '/category/jumpman'},
+    {id: 3, name: "Running shoes", doc_count: 3, directory: '/category/running'},
+    {id: 4, name: "Football shoes", doc_count: 1, directory: '/category/footballshoes'},
 ]
 
 interface MenuProps {
