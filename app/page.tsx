@@ -12,12 +12,12 @@ export default function Home() {
       <main className={clsx(
         "min-h-screen",
         "flex flex-col items-center justify-between",
-        "p-24",
+        "p-5",
       )}>
         <Banner />
         <Headingdesc />
         <Wrapper className={clsx(
-          "grid md:grid-cols-3 grid-cols-1 gap-20",
+          "grid md:grid-cols-3 grid-cols-1 gap-10",
         )}>
           {data.map(item => (
             <>
