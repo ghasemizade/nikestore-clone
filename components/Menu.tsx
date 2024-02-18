@@ -2,7 +2,6 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
 import { BsChevronDown } from 'react-icons/bs'
-import listdata from './Listdata'
 
 
 const navData = [
