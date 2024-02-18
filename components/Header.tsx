@@ -129,7 +129,7 @@ export default function Head() {
                         )}>5</div>
                     </div>
 
-                            {/* movile icon */}
+                            {/* mobile icon */}
                     <div className={clsx(
                         "w-8 md:w-12 h-8 md:h-12",
                         "rounded-full",
@@ -137,7 +137,8 @@ export default function Head() {
                         "hover:bg-black/[0.05]",
                         "cursor-pointer",
                         "relative",
-                        "mr-2"
+                        "mr-2",
+                        "md:hidden"
                     )}>
                         {mobileMenu ? (
                             <VscChromeClose className={clsx(
